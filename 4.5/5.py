@@ -3,7 +3,6 @@ from datetime import datetime
 
 with ZipFile('workbook.zip') as file:
     data = file.infolist()
-
 # data.sort()
 new_data = {
 
