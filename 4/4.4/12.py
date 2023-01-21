@@ -8,7 +8,7 @@ data = list(map(lambda y:[y['name'], y['phone']], list(filter(lambda x:x['age'] 
 
 data = sorted(data, key = lambda x:x[0])
 
-with open('data.csv','w', encoding='utf-8', newline='') as output_file:
+with open('data.csv', 'w', encoding='utf-8', newline='') as output_file:
     writer = csv.writer(output_file)
     writer.writerow(['name','phone'])
     writer.writerows(data)

@@ -1,6 +1,6 @@
 import csv
 
-with open('writing_test.csv', 'w', encoding='utf-8',newline='') as csv_file:
+with open('writing_test.csv', 'w', encoding='utf-8', newline='') as csv_file:
     # создаем writer объект и указываем названия столбцов
     writer = csv.DictWriter(csv_file, fieldnames=['first_col', 'second_col'])
     # записываем первую строку с названиями столбцов

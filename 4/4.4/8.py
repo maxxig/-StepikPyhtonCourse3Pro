@@ -8,5 +8,5 @@ with open('data2.json', encoding='utf-8') as file2:
 
 data1.update(data2)
 
-with open('data_merge.json','w') as output_file:
+with open('data_merge.json', 'w') as output_file:
     json.dump(data1, output_file, indent='   ')

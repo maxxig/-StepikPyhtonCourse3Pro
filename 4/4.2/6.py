@@ -13,7 +13,7 @@ for d in data:
         data_dict[d] += 1
 data_dict = [list(s) for s in sorted(data_dict.items(), key=lambda x: (x[1],x[0]))]
 
-with open('domain_usage.csv', 'w',  encoding='utf-8', newline='') as file:
+with open('domain_usage.csv', 'w', encoding='utf-8', newline='') as file:
     write = csv.writer(file)
     write.writerow(columns)
     write.writerows(data_dict)

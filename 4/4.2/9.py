@@ -18,7 +18,7 @@ for d in data:
             data_dict[d[1]] = [d[0], d[2]]
 return_data = [[s[1][0], s[0], s[1][1]] for s in sorted(data_dict.items(), key=lambda x: x[0])]
 
-with open('new_name_log.csv', 'w',  encoding='utf-8', newline='') as file:
+with open('new_name_log.csv', 'w', encoding='utf-8', newline='') as file:
     write = csv.writer(file)
     write.writerow(columns)
     write.writerows(return_data)

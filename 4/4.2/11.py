@@ -23,4 +23,4 @@ def condense_csv(filename, id_name):
         write.writerow(column)
         write.writerows(result)
 
-condense_csv(filename = '11.csv', id_name = 'ID2')
+condense_csv(filename ='11.csv', id_name ='ID2')

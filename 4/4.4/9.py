@@ -16,5 +16,5 @@ for i, d in enumerate(data):
     append_result.update(d)
     data[i] = append_result
 
-with open('updated_people.json','w') as output_file:
+with open('updated_people.json', 'w') as output_file:
     json.dump(data, output_file, indent='   ')
