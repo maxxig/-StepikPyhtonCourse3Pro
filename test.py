@@ -1,6 +1,6 @@
-from collections import OrderedDict
+numbers = (-2, -1, 0, 1, 2)
 
-physicists = OrderedDict(newton='1642-1726', einstein='1879-1955')
-biologists = OrderedDict(darwin='1809-1882', mendel='1822-1884',newton='1642-1727')
+non_zero = filter(None, numbers)
+positive = map(abs, non_zero)
 
-print(physicists | biologists)
+print(*positive)
