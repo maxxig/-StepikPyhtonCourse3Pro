@@ -10,11 +10,12 @@ class Xrange:
 
     def __next__(self):
         self.curent += self.step
-        if self.curent > self.end:
+        if self.start <= self.end and self.curent >= self.end:
+            raise StopIteration
+        elif self.start > self.end and self.curent <= self.end:
             raise StopIteration
         return self.curent
 
+xrange = Xrange(5.9, 44, 3)
 
-evens = Xrange(0, 10, 2)
-
-print(*evens)
+print(tuple(xrange))
