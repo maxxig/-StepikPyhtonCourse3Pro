@@ -1,4 +1,6 @@
-from itertools import repeat
+numbers = (-2, -1, 0, 1, 2)
 
-for a, b, c in map(lambda x, у: (x, у, x * у), repeat(2), range(6)):
-    print(f'{a} * {b} = {c}')
+non_zero = filter(None, numbers)
+positive = map(abs, non_zero)
+
+print(*positive)
