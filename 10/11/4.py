@@ -19,4 +19,8 @@ tasks = [('Отдых', 'поспать днем', 3),
 tasks = groupby(sorted(tasks, key=lambda x:x[0]), key=lambda x: x[0])
 
 for k, t in tasks:
-        print(*t)
+        print(f"{k}:")
+        d =  sorted([(v[2], v[1]) for v in t], key=lambda x: x[0])
+        for i, item in enumerate(d, 1):
+                print(f"    {i}. {item[1]}")
+        print()
